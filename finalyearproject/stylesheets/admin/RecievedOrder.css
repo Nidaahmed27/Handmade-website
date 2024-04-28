@@ -1,0 +1,62 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #ffe4e1;
+    padding: 20px 0px;
+}
+
+.table-heading {
+    color: #b47580;
+    margin-bottom: 20px;
+}
+
+table {
+    border: none;
+    text-align: left;
+    width: 90%;
+    background-color: #ffe4e1;
+    color: #b47580;
+}
+
+th {
+    background-color: #b47580;
+    color: #ffe4e1;
+    padding: 5px 10px 5px 10px;
+}
+
+td {
+    border-bottom: 1px solid #b47580;
+    padding: 0px 10px 5px 10px;
+}
+
+
+.address-column {
+    word-wrap: break-word; /* Enable word wrap for the address */
+    max-width: 200px; /* Optionally, you can set a maximum width */
+}
+
+.Btn-delivered {
+    background-color: #ffe4e1;
+    color: #b47580;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 8px 6px;
+    border-radius: 15px;
+    margin: 4px 0px;
+}
+
+    .Btn-delivered:hover {
+        background-color: #b47580;
+        color: #ffe4e1;
+    }

@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="finalyearproject.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheets/admin/AdminMaster.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+ <form id="form1" runat="server">
+     <div>
+            <header>
+                <div class="logo">
+                    <span class="logo-text1">HAND</span>
+                    <span class="logo-text2">MADE</span>
+                    <span ><img src="Assets/Icons/pagelines.svg" alt="leaf-img" class="leaf-img"/></span>
+                </div>
+                <div class="icons">
+                    <a class="shopping-cart" href="RecievedOrder.aspx" runat="server">
+                        <img src="Assets/Icons/truck-fast-solid.svg" alt="bag-shopping" />
+                        <span class="badge" id="OrderCount" runat="server"></span>
+                    </a>
+
+                    <asp:Button ID="BtnLogout" runat="server" Text="Logout" OnClick="BtnLogout_Click" />
+                </div>
+            </header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="AddProduct.aspx">ADD PRODUCT</a></li>
+                    <li><a href="BrandName.aspx">ADD BRAND</a></li>
+                    <li><a href="Category.aspx">ADD CATEGORY</a></li>
+                    <li><a href="SubCategory.aspx">ADD SUB-CATEGORY</a></li>
+                    
+
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <footer>
+        <div class="footer-items">
+            <img src="Assets/Icons/copyright-regular.svg" alt="copyright"/>
+            <p>HAND MADE | All Right Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

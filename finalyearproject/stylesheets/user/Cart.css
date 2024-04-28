@@ -1,0 +1,150 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cart-item {
+    display: flex;
+    background-color: #e3cfcf;
+    min-height:500px;
+   
+}
+
+.right-content {
+    width: 80%;
+    padding-top: 10px;
+}
+
+.item-count {
+    font-size: 20px;
+    margin-left: 25px;
+    color: #8f6a71;
+}
+
+.cart-products {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin: 20px 20px;
+}
+
+.cart-item-inside {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 350px;
+    height: auto;
+    /*border: 1px solid #6d071a;*/
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    margin-right:10px;
+    background-color: #ffffff;
+}
+
+.product-details {
+    margin-left: 20px;
+    
+}
+
+.product-image {
+    width: auto;
+    height:120px;
+    border-radius: 10px;
+    align-self:flex-start;
+}
+
+.product-name {
+    color: #3d3d3d;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.brand-name {
+    color: #9c9c9c;
+    font-weight:500;
+    font-size:18px;
+}
+
+.product-description {
+    color: #686464;
+    word-wrap: break-word;
+    margin-top: 5px;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+
+.product-price {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top:5px;
+}
+
+
+
+
+.remove-from-cart {
+    background-color: #b47580;
+    color: #f6f6f6;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top:5px;
+}
+
+    .remove-from-cart:hover {
+        background-color: #ffe4e1;
+        color: #6d071a;
+    }
+
+.subtotal-section {
+    background-color: #b47580;
+    width:20%;
+}
+
+.cart-total-heading {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.total-section {
+    color: #ffffff;
+    margin: 10px 0px 10px 20px;
+    font-size: 18px;
+}
+/*
+    .Label1 {
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+}
+}
+
+.LblCartTotal {
+    color:white
+}
+*/
+
+
+.BtnCheckout {
+    background-color: #ffffff;
+    color: #8e5a5a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left:20px;
+}
+    .BtnCheckout:hover {
+        background-color: #ffe4e1;
+        color: #6d071a;
+    }
+   

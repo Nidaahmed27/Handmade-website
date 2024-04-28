@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="finalyearproject.User" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Welcome Users</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link href="stylesheets/user/MasterUser.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <div class="logo">
+                    <span class="logo-text1">HAND</span>
+                    <span class="logo-text2">MADE</span>
+                    <span ><img src="Assets/Icons/pagelines.svg" alt="leaf-img" class="leaf-img"/></span>
+                </div>
+                <div class="icons">
+                    <a class="shopping-cart" href="Cart.aspx" runat="server">
+
+                        <img src="Assets/Icons/bag-shopping-solid.svg" alt="bag-shopping" />
+                        <span class="badge" id="PCount" runat="server"></span>
+                    </a>
+                     <asp:Button ID="BtnLogout" runat="server" Text="Logout" OnClick="BtnLogout_Click" cssclass="loginlogout" />
+            <asp:Button ID="BtnLogin" runat="server" Text="Login" OnClick="BtnLogin_Click" cssclass="loginlogout"/>
+                </div>
+            </header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="Products.aspx">PRODUCTS</a></li>
+                    <li><a href="default.aspx#contact-us">CONTACT US</a></li>
+                    <li><a href="default.aspx#about-us">ABOUT US</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+        <div class="footer-items">
+            <img src="Assets/Icons/copyright-regular.svg" alt="copyright"/>
+            <p>HAND MADE | All Right Reserved.</p>
+        </div>
+    </footer>
+    </form>
+
+</body>
+</html>

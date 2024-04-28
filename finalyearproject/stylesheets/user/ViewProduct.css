@@ -1,0 +1,105 @@
+﻿.view-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-image: url(Handmade\ Scented\ Boutique\ Soaps.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background-color: #e3cfcf;
+    height: 700px;
+    width: 100%;
+}
+
+.view-product-inside {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    height: 500px;
+    width: 70%;
+    border-radius:15px;
+}
+
+.view-product-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+}
+
+.view-product-content {
+    width: 40%;
+    /*background-color:red;*/
+    height: 80%;
+}
+
+.sliders {
+    display: flex;
+    align-items: center;
+
+}
+
+.image-container {
+    height:450px;
+    width: 300px;
+    overflow:hidden;
+}
+
+.slide {
+    display: none;
+}
+
+    .slide.active {
+        display: block;
+    }
+
+.prev,
+.next {
+    cursor: pointer;
+}
+
+
+.product-name {
+    color: #3d3d3d;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.brand-name {
+    color: #9c9c9c;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+
+.product-details {
+    color: #686464;
+    word-wrap: break-word;
+    margin: 5px 0px;
+    width: 100%;
+    line-height: 24px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.product-price {
+    color: black;
+}
+
+.AddToCart {
+    background-color: #b47580;
+    color: #f6f6f6;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top:5px;
+}
+
+    .AddToCart:hover {
+        background-color: #ffe4e1;
+        color: #6d071a;
+    }
+
